@@ -1,0 +1,4 @@
+org\camunda\platform\runtime\example\GrantLoanHandler.class
+org\camunda\platform\runtime\example\CamundaController.class
+org\camunda\platform\runtime\example\ProvideScoreHandler.class
+org\camunda\platform\runtime\example\Application.class
