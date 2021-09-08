@@ -33,13 +33,13 @@ stages:
     - task: Maven@3
       displayName: 'Maven Package'
       inputs:
-        mavenPomFile: 'pom.xml'
+        mavenPomFile: 'external-task-client-spring-boot-starter/pom.xml'
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
       inputs:
         SourceFolder: '$(System.DefaultWorkingDirectory)'
-        Contents: '**/target/*.?(war|jar)'
+        Contents: '**/external-task-client-spring-boot-starter/target/*.?(war|jar)'
         TargetFolder: $(Build.ArtifactStagingDirectory)
 
     - upload: $(Build.ArtifactStagingDirectory)
